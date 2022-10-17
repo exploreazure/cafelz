@@ -55,10 +55,10 @@ jobs:
           subscriptionId: ${{ env.SUBSCRIPTIONID }}
           region: ${{ env.REGION }}
           resourceGroupName: ${{ env.RESOURCEGROUPNAME }}
-          template: src/templates/azuredeploy.json          
+          template: src/infra/ipam/templates/azuredeploy.json          
           deploymentMode: incremental
           deploymentName: "AIPAS-storageaccount"
-          parameters: src/templates/azuredeploy.parameters.json
+          parameters: src/infra/ipam/templates/azuredeploy-parameters.json
       # Output Storage Account ResourceGroup Name and Storage Account Name
       - run: |
           echo ${{ steps.deploy-storage-account.outputs.ResourceGroupName }}
