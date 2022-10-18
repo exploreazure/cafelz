@@ -198,8 +198,8 @@ jobs:
             # Set the subscription name and run commands in the context of that subscription
             # 
             $subName = $elzSubName
-            $subName = 'Azure Landing Zone'  # Temporary for testing 
-            #$subName = 'CBPVisual Studio Enterprise'  # Temporary for testing 
+            #$subName = 'Azure Landing Zone'  # Temporary for testing 
+            $subName = 'CBPVisual Studio Enterprise'  # Temporary for testing 
             $subId = (Set-AzContext -SubscriptionName $subName).Subscription.Id
             $subScope = '/subscriptions/' + $subId
 
