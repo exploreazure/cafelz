@@ -57,7 +57,7 @@ jobs:
                 Invoke-RestMethod @params      
             }
 
-            #Add-Lzim-Records -Environment 'Dev' -Number 100
+            Add-Lzim-Records -Environment 'Dev' -Number 100
             Add-Lzim-Records -Environment 'Prod' -Number 100
             Add-Lzim-Records -Environment 'QA' -Number 100
             Add-Lzim-Records -Environment 'Staging' -Number 100
