@@ -36,7 +36,7 @@ module fa './modules/fa.bicep' = {
     tableName: 'ipam'
     planName: 'plan-${mgmtSubName}-${regionId}-ipam'
     planSkuName: 'EP1'
-    planTier: 'Premium'
+    planTier: 'Shared'
     faName: 'fa-${mgmtSubName}-${regionId}-ipam'
     logId: monitor.outputs.logId
     location: regionName
